@@ -68,6 +68,10 @@ public class Aluno {
     public String getEmail() {
         return email;
 
+
+
+        
+
     }
 
     public String obterDados() {
@@ -76,7 +80,4 @@ public class Aluno {
                 "\nEmail: " + email;
     }
 
-    private String validarEmail(String email) {
-        return email;
-    }
 }

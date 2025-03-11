@@ -1,5 +1,8 @@
 //esta é uma class driver
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno();
@@ -21,5 +24,25 @@ public class Main {
         aluno3.setEndereco(new Endereco("123123", "123"));
         System.out.println(
                 aluno3.getEndereco().getLogradouro());
+
+        int[] numeros = new int[5];
+        numeros[0] = 7;
+
+        Aluno aluno5 = new Aluno();
+
+        Aluno[] alunos = new Aluno[5];
+
+        alunos[0] = new Aluno();
+        alunos[0].setRm(123);
+
+        List<Aluno> listaAlunos = new ArrayList<Aluno>();
+
+        listaAlunos.add(new Aluno());
+
+        Aluno aluno6 = new Aluno();
+        listaAlunos.add(
+                aluno6);
+
+        Aluno aluno = listaAlunos.get(0);
     }
 }
